@@ -1,0 +1,119 @@
+<div class="container">
+    <div  style="font-family:cursive;font-size: 900;  font-weight: bold;font-size:larger">
+    <form (ngsubmit)="onSubmit()">
+  <div class="row">
+   
+
+    <div class="col-md-12">
+      <h1>Checklist Assets</h1>
+     
+      <div class="table-responsive">
+
+
+        <table id="mytable" class="table table-bordered table-dark">
+
+          <thead _ngcontent-c1="">
+
+
+            <th _ngcontent-c1="" style = "background-color:grey;" >Building_Assets</th> 
+           
+            <th  _ngcontent-c1="" style = "background-color:grey;">Asset_Type</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">floor_No</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">Assets_No</th>
+          
+
+            <th _ngcontent-c1="" style = "background-color:grey;">checklist</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">Images</th>
+
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let user of checkdetail"> 
+
+              <td>{{user.building_assests}}</td>
+              <td> {{user.asset_type}}</td>
+              <td>{{user.floor_no}}</td>
+              <td>{{user.assets_no}}</td> 
+             
+               
+              
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td>
+                <input name="myimage" type="file"(change)="onFileSelected($event)" class="form-control-file"  aria-describedby="fileHelp">
+                <button type="button"style="margin-left: 73%;"(click)="onUpload()" method="POST">upload</button>
+              </td> 
+                    
+            </tr> 
+            
+               
+            <!-- <tr>
+
+              <td>Doors</td>
+              <td>wood</td>
+              <td>4</td>
+              <td>3</td>
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr>
+
+            <tr>
+
+              <td>roof</td>
+              <td> marble</td>
+              <td>4</td>
+              <td>3</td>
+              
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr>
+            <tr>
+
+              <td>windows</td>
+              <td> glass</td>
+              <td>4</td>
+              <td>3</td>
+             
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr>  -->
+          </tbody>
+
+        </table>
+      </div>
+      <div class="col-lg-12"  style ="margin-left:90% ; margin-right:10%">
+   
+        <input type="button" (click) ="onSubmit()" class="btn btn-primary" value="Submit" />
+      </div>
+      <div class ="col-lg-6" style ="margin-left:80% ; margin-top: -4%;" >
+       <input type="button" (click) ="onClick()" class="btn btn-primary" value="Edit" />
+       
+      </div>
+    </div>
+    
+    </div>
+  </form>
+  </div>
+  </div>
+              
+
+             
+
+
+           
+        
+
+
+
+
+
+
+          
+        
+      
+   

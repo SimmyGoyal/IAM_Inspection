@@ -1,0 +1,108 @@
+
+<div class="container">
+    
+  <div  style="font-family:cursive;font-size: 900;  font-weight: bold;font-size:larger">
+
+     
+  <form (ngsubmit)="onSubmit()"[formGroup]="editForm">
+    
+<div class="row">
+ 
+
+  <div class="col-md-12">
+    <h1>Checklist Assets</h1>
+   
+    <div class="table-responsive">
+
+
+      <table id="mytable" class="table table-bordered table-dark">
+
+        <thead _ngcontent-c1="">
+
+
+          <th _ngcontent-c1="" style = "background-color:grey;" >Building_Assets</th> 
+         
+          <th  _ngcontent-c1="" style = "background-color:grey;">Asset_Type</th>
+          <th _ngcontent-c1="" style = "background-color:grey;">floor_No</th>
+          <th _ngcontent-c1="" style = "background-color:grey;">Assets_No</th>
+          
+          <th _ngcontent-c1="" style = "background-color:grey;">checklist</th>
+          <th _ngcontent-c1="" style = "background-color:grey;">Images</th>
+
+        </thead>
+        <tbody>
+          
+            
+         
+          <tr>
+
+            <td><input type="text" formControlName="building_assests" class="form-control"></td>
+            <td><input type="text" formControlName="asset_type" class="form-control"></td>
+            <td><input type="text" formControlName="floor_no" class="form-control"></td>
+            <td><input type="text" formControlName="asset_no" class="form-control"></td>
+
+            
+            <td><input type="checkbox" class="checkthis" /></td>
+            <td><label for="exampleInputFile"></label>
+              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            </td>
+           </tr>
+
+
+          <tr>
+
+            <td><input type="text" formControlName="building_assests" class="form-control"></td>
+            <td><input type="text" formControlName="asset_type" class="form-control"></td>
+            <td><input type="text" formControlName="floor_no" class="form-control"></td>
+            <td><input type="text" formControlName="asset_no" class="form-control"></td>
+            
+
+            <td><input type="checkbox" class="checkthis" /></td>
+            <td><label for="exampleInputFile"></label>
+              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            </td>
+          </tr>
+
+
+
+          <tr>
+
+            <td><input type="text" formControlName="building_assests" class="form-control"></td>
+            <td><input type="text" formControlName="asset_type" class="form-control"></td>
+            <td><input type="text" formControlName="floor_no" class="form-control"></td>
+            <td><input type="text" formControlName="asset_no" class="form-control"></td>
+            
+            <td><input type="checkbox" class="checkthis" /></td>
+            <td><label for="exampleInputFile"></label>
+              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            </td>
+          </tr> 
+        </tbody>
+
+      </table>
+      </div>
+
+      
+  <div class="col-lg-12" style="margin-left:90%; margin-top:10%;">
+   
+    <input type="button" (click) ="onSubmit()" class="btn btn-primary" value="Submit"  />
+  </div>
+</div>
+
+</div>
+</form>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+        

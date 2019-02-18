@@ -1,0 +1,27 @@
+.row{
+    margin-top:50px;
+    padding: 0 10px;
+}
+.clickable{
+    cursor: pointer;   
+}
+
+.panel-heading div {
+    margin-top: -18px;
+    font-size: 25px;
+}
+.panel-heading div span{
+    margin-left:6px;
+}
+.panel-body{
+    display: none;
+}
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+  }
+  
+  .success {background-color:rgb(173, 173, 187);} /* Green */
+  .success:hover {background-color:blue;}

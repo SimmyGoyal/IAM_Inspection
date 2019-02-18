@@ -1,0 +1,127 @@
+<div class="container">
+    <div  style="font-family:cursive;font-size: 900;  font-weight: bold;font-size:larger">
+    <form (ngsubmit)="onSubmit()">
+  <div class="row">
+   
+
+    <div class="col-md-12">
+      <h1>Checklist Assets</h1>
+     
+      <div class="table-responsive">
+
+
+        <table id="mytable" class="table table-bordered table-dark">
+
+          <thead _ngcontent-c1="">
+
+
+            <th _ngcontent-c1="" style = "background-color:grey;" >Building_Assets</th> 
+           
+            <th  _ngcontent-c1="" style = "background-color:grey;">Asset_Type</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">floor_No</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">Assets_No</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">Edit</th>
+
+            <th _ngcontent-c1="" style = "background-color:grey;">checklist</th>
+            <th _ngcontent-c1="" style = "background-color:grey;">Images</th>
+
+          </thead>
+          <tbody>
+
+            <!-- <tr *ngFor="let user of checkdetail";> 
+
+              <td>{{user.building_assests}}</td>
+              <td> {{user.asset_type}}</td>
+              <td>{{user.floor_no}}</td>
+              <td>{{user.assets_no}}</td> 
+             
+               
+              <td>
+                <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
+                    data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+              </td>
+              <td><input type="checkbox" class="checkthis" /></td>
+
+              <!-- <td><label for="exampleInputFile"></label> -->
+                <!-- <td>
+                <input type="file"(change)="onFileSelected($event)" class="form-control-file"  aria-describedby="fileHelp">
+                <button type="button"style="margin-left: 73%;"(click)="onUpload()">upload</button>
+              </td>
+
+            </tr> --> 
+            <tr>
+
+              <td>Doors</td>
+              <td>wood</td>
+              <td>4</td>
+              <td>3</td>
+
+              <td>
+                <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
+                    data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p>
+              </td>
+
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr>
+
+
+            <tr>
+
+              <td>roof</td>
+              <td> marble</td>
+              <td>4</td>
+              <td>3</td>
+              <td>
+                <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
+                    data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p>
+              </td>
+
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr>
+
+
+
+            <tr>
+
+              <td>windows</td>
+              <td> glass</td>
+              <td>4</td>
+              <td>3</td>
+              <td>
+                <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs"
+                    data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p>
+              </td>
+              <td><input type="checkbox" class="checkthis" /></td>
+              <td><label for="exampleInputFile"></label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </td>
+            </tr> 
+
+
+
+
+
+
+
+          </tbody>
+
+        </table>
+        </div>
+
+        
+    <div class="col-lg-12">
+     
+      <input type="button" (click) ="onSubmit()" class="btn btn-primary" value="Submit" />
+    </div>
+  </div>
+  
+  </div>
+</form>
+</div>
+</div>

@@ -1,0 +1,41 @@
+
+<div class="container " >
+    <div  style="font-family:cursive;font-size: 900;">
+    <div class=" custyle" style ="width:100%">
+    <table class="table table-striped custab">
+    <thead>
+  
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Policy_No</th>
+            <th>User_ID</th>
+            <th class="text-center">Action</th>
+        </tr>
+    </thead>
+            <tr *ngFor="let user of userdetail| paginate: { itemsPerPage: 6, currentPage: p }">
+                <td>{{user.name}}</td>
+                <td>{{user.address}}</td>
+                <td>{{user.policy_no}}</td>
+                <td>{{user.user_id}}</td>
+                <td class="text-center"><input type="button" (click) ="onClick()" class="btn btn-primary" value="Claim" /></td>
+            </tr>
+            
+             <!-- <tr>
+                 <td>
+                    1234
+                 </td>
+                 <td>simran</td>
+                 <td>
+                     12345
+                 </td>
+                 <td>
+                     bhilwara
+                 </td>
+                 <td class="text-center"><a class='btn btn-info btn-xs' href="claim"> claim</a></td>
+             </tr> -->
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+    </div>
+</div>
